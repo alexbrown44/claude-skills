@@ -327,26 +327,13 @@ Explain Render:
 Steps:
 1. Go to render.com — sign up using your GitHub account (one click, no separate password).
 2. Create a new **Web Service** — point it at your GitHub repository.
-3. Add environment variables — any secret keys (like an Anthropic API key) go here, not in the code.
-   > "Let's talk about API keys, because this trips people up.
+3. Add environment variables — any API keys go here.
+   > "Remember the `.env` file on your computer that kept your API key safe locally? Render has
+   > the same concept, but for the live app. Instead of a file on your computer, you add the key
+   > directly into Render's settings — it stores it securely on their servers, separate from your
+   > code. Your app reads it the same way as before, but now it works on the internet too.
    >
-   > An **API** is a service provided by another company that your app calls on to do something
-   > clever. The Chess Trainer uses Anthropic's API — every time you make a chess move, the app
-   > sends that move to Anthropic's servers, which use Claude to decide the response and generate
-   > your coaching report at the end. That's not happening on your computer or on Render — it's
-   > happening on Anthropic's computers, somewhere in the world.
-   >
-   > That service isn't free. Anthropic charges a small amount per request — fractions of a penny
-   > per move. The person who built the Chess Trainer pays that bill. Their **API key** is what
-   > identifies them to Anthropic and tells Anthropic whose account to charge.
-   >
-   > An API key is like a password combined with a credit card number — if someone else gets hold
-   > of it, they can use Anthropic's services and the bill comes to you. That's why it must never
-   > appear in your code files (which are visible on GitHub) and never be shared.
-   >
-   > An **environment variable** is the safe way to give your app a secret. It lives on Render's
-   > servers, separate from your code. Your app can read it when it needs to make an API call,
-   > but it never gets written into a file that could end up on GitHub."
+   > This is the step where your live app gets access to any external services it needs."
 4. Deploy — Render builds and starts your app. You get a public URL.
 
 **Auto-deploy:** From now on, every time you push to GitHub, Render redeploys automatically.
