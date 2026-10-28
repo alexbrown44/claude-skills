@@ -224,16 +224,29 @@ Walk the user through this carefully. They may never have used a terminal before
 >
 > You install them all in one go. You only need to do this once."
 
-Offer the shortcut first:
-> "The easiest way: just ask me — 'install the dependencies and start the server' — and I'll run the
-> commands for you using my built-in terminal. (My built-in terminal is a text window where I can run
-> commands directly on your computer, so you don't have to open one yourself.)"
+Present both options together so they can see what's involved either way:
 
-If they prefer to do it themselves, give clear instructions:
-> "Press the Windows key, type 'cmd', press Enter. In the window that opens, type:
-> `cd C:\path\to\your\folder` (replace with your actual folder path) and press Enter.
-> Then type: `npm install` and press Enter. Wait for it to finish — it may take a minute.
-> Then type: `node server.js` and press Enter. Leave this window open — closing it stops the app."
+> "There are two ways to do this:
+>
+> **Option 1 (easiest):** Just tell me — 'install the dependencies and start the server' — and I'll
+> run the commands for you using my built-in terminal. (My built-in terminal is a text window where
+> I can run commands directly on your computer, so you don't have to open one yourself.)
+>
+> **Option 2 (do it yourself):**
+> Press the Windows key, type **cmd**, press Enter. A black window opens — that's the Command Prompt.
+> Type: `cd C:\path\to\your\folder` (replace with your actual folder path) and press Enter.
+> This navigates to your project folder — like opening a drawer before you can use what's inside.
+>
+> Then run these two commands, one at a time:
+>
+> `npm install`
+> This reads your **package.json** file and downloads all the libraries your app needs. npm stands
+> for Node Package Manager — think of it as an app store for code libraries. You only need to run
+> this once.
+>
+> `node server.js`
+> This starts your app. 'node' is the engine that runs JavaScript on your computer (outside of a
+> browser). 'server.js' is your app's main file. Leave this window open — closing it stops the app."
 
 Then:
 > "Open your browser and go to **localhost:3000**
