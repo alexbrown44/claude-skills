@@ -357,11 +357,17 @@ side of running a server on the internet so you don't have to. It's ideal for te
 
 ### Checkpoint 2 Decision Point
 
-Once the app is live, stop and ask:
+Once the app is live, take a moment to mark it properly before moving on:
 
-> "Your app is live at [URL]. Anyone can use it now. 🎉
+> "Your app is live at [URL]. 🎉
 >
-> At this point you might find yourself thinking: it works, but it doesn't remember anything.
+> Let that sink in for a second. You just built and published a working web app. It has a real
+> URL. Anyone in the world can open it. You wrote none of the code — you described what you wanted
+> and directed the outcome. That's a genuinely impressive thing to have done.
+>
+> Share that link with someone. You've earned it.
+>
+> When you're ready — at this point you might find yourself thinking: it works, but it doesn't remember anything.
 > Every session starts fresh — no history, no scores, no way for users to see how they've
 > improved over time. That's exactly what happened with the Chess Trainer. The first version
 > was live and working, but the builder then decided they wanted a leaderboard and a way for
