@@ -556,18 +556,19 @@ you want. A few principles that help:
 
 You never need to suggest a solution. That's Claude Code's job.
 
-Read `references/iteration-examples.md` now for five real Chess Trainer examples covering
-the main patterns: fixing a bug, redesigning a feature, adding something new, a capability
-unlocking new features, and progressive refinement over multiple sessions. Share the relevant
-examples with the user as they come up naturally in the conversation.
+If `references/iteration-examples.md` exists, read it and share the relevant examples with
+the user as they come up naturally. It contains five real Chess Trainer examples covering:
+fixing a bug, redesigning a feature, adding something new, a capability unlocking new features,
+and progressive refinement. If the file is not present, continue without it.
 
 ---
 
 ## What next?
 
-Read `references/what-next.md` and share it with the user. It covers: what's still within
-easy reach (iteration, design, sharing, custom domains), what gets significantly more complex
-(auth, payments, scaling), an honest closing note, and a full costs summary table.
+If `references/what-next.md` exists, read it and share it with the user. It covers: what's
+still within easy reach (iteration, design, sharing, custom domains), what gets significantly
+more complex (auth, payments, scaling), an honest closing note, and a full costs summary table.
+If the file is not present, continue without it.
 
 ---
 
