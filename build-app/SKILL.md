@@ -135,7 +135,9 @@ is better for execution once the idea is clear.
 **Expect iteration:** The first version of an idea is rarely the final one. When building the
 Chess Trainer, the first prompt produced an app that included a live online chess board — not
 what was wanted. One conversation in Claude.ai clarified the idea, and the revised prompt
-produced exactly the right result. Two iterations is normal; don't be discouraged.
+produced a much better result — good enough to start building from. The app was then refined
+further through iteration during the build itself. That's normal: the prompt gets you started
+in the right direction, and you adjust as you go.
 
 Once the user has a clear brief from Claude.ai, continue to Stage 1.1.
 
