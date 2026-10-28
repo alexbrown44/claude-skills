@@ -276,8 +276,10 @@ Present both options together so they can see what's involved either way:
   and try again.
 - **Not sure of your folder path** — ask Claude Code: *"What is the full path to my project
   folder?"* and it will tell you exactly what to type.
-- **'EADDRINUSE' or 'port already in use'** — something is already running on port 3000,
-  often a previous run of your app. Ask Claude Code to stop it, or restart your computer.
+- **'EADDRINUSE', 'port already in use', or 'address already in use'** — your app is trying
+  to start but something else is already using port 3000 (often a previous run of your app
+  that didn't close properly). Ask Claude Code: *"Port 3000 is already in use — can you stop
+  whatever is running there?"* Or the quickest fix: restart your computer.
 - **localhost:3000 shows nothing** — check whether your terminal window is still open. If it
   closed, run `node server.js` again.
 
@@ -335,9 +337,11 @@ Steps:
 > "You can ask me to push your files to GitHub — just say 'push my files' and I'll run the
 > git commands for you. Or you can use the GitHub Desktop app if you prefer a visual interface."
 
-**If the push fails with an authentication error** — GitHub now requires a personal access
-token rather than a password. Ask Claude Code: *"My git push failed with an authentication
-error — can you help me fix it?"*
+**If the push fails with an authentication error** — GitHub no longer accepts your account
+password for this. It requires a separate security token (a long auto-generated password
+called a personal access token). You don't need to understand the details — just ask Claude
+Code: *"My git push failed with an authentication error — can you walk me through fixing it?"*
+and it will guide you through generating one in your GitHub settings and using it.
 
 **Why GitHub?** Every change you make in the future travels through GitHub to the live app.
 It also keeps a full history — you can always go back to an earlier version if something breaks.
@@ -458,9 +462,11 @@ ideal for learning and testing.
 a week of inactivity. Log in to supabase.com, find your project, and click the button to
 unpause it. It takes about a minute to restart.
 
-**Table name mismatch errors** — if you get 'table not found' errors, the name in the code
-doesn't match what you created in Supabase. Ask Claude Code: *"Can you check the table names
-in the code match what I set up in Supabase?"*
+**Errors containing 'does not exist' or 'relation not found'** — this usually means the name
+of a table or column in the code doesn't exactly match what you created in Supabase (even a
+small difference like a capital letter will cause it). Ask Claude Code: *"I'm getting a 'does
+not exist' error with the database — can you check the table and column names in the code
+match what I set up in Supabase?"*
 
 ### Stage 3.2 — Connect to Your App
 
