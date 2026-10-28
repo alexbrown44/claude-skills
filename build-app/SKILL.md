@@ -11,35 +11,12 @@ description: >
 
 # /build-app — Build Your First Web App
 
-## Getting this skill (first time only)
+## Welcome
 
-This skill lives on GitHub — and getting it is itself your first lesson, because GitHub is a tool
-you'll use throughout the whole process.
-
-**What is GitHub?** GitHub is a website where developers store and share code. Think of it like
-Google Drive, but built for software. This skill is a file stored there that you download once
-and then keep on your computer.
-
-**How to install this skill into Claude Code:**
-
-1. Go to the skill's GitHub page (your instructor will give you the link).
-2. Click the green **Code** button, then **Download ZIP**. Unzip the file — you'll find a file
-   called `SKILL.md` inside.
-3. Open **File Explorer** and go to your project folder (wherever you plan to build your app —
-   create an empty folder now if you haven't already).
-4. Inside that folder, create this exact path of subfolders:
-   `.claude` → `skills` → `build-app`
-
-   To do this: right-click inside the folder, choose **New → Folder**, name it `.claude`.
-   Open it, create another folder called `skills`. Open that, create one called `build-app`.
-
-   > **Note:** On Windows, folders starting with a dot (like `.claude`) are hidden by default.
-   > To see them in File Explorer, click **View** → tick **Hidden items**.
-
-5. Copy the `SKILL.md` file into the `build-app` folder.
-6. Open Claude Code, open your project folder, and type `/build-app` to begin.
-
-You'll use GitHub again in Checkpoint 2 to publish your own app. By then it'll already feel familiar.
+You've installed this skill — which means you've already done something worth noting.
+You found a file on GitHub, downloaded it, and set it up in Claude Code. That's exactly
+the same process you'll use in Checkpoint 2 to publish your own app. GitHub is already
+familiar territory.
 
 ---
 
