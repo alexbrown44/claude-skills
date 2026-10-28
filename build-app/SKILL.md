@@ -269,6 +269,10 @@ Present both options together so they can see what's involved either way:
 > This starts your app. 'node' is the engine that runs JavaScript on your computer (outside of a
 > browser). 'server.js' is your app's main file. Leave this window open — closing it stops the app."
 
+**To stop the server:** When you're done testing, go back to the terminal window and press
+**Ctrl+C**. This stops the app. (This is also useful if you need to restart it after making
+changes — stop it with Ctrl+C, then run `node server.js` again.)
+
 **Common problems at this stage:**
 
 - **'npm is not recognised' or 'command not found'** — Node.js isn't installed yet. Go to
