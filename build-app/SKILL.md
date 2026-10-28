@@ -220,6 +220,10 @@ values. This file stays on your computer only — it is never pushed to GitHub.
 
 Claude Code will handle setting this up. When it asks for an API key, that's where to paste it.
 
+**If the app loads but API calls fail** — the first thing to check is whether the `.env` file
+exists and contains the correct key. Ask Claude Code: *"Can you check my .env file is set up
+correctly?"*
+
 ### Stage 1.3 — Install and Run Locally
 
 Walk the user through this carefully. They may never have used a terminal before.
@@ -264,6 +268,18 @@ Present both options together so they can see what's involved either way:
 > `node server.js`
 > This starts your app. 'node' is the engine that runs JavaScript on your computer (outside of a
 > browser). 'server.js' is your app's main file. Leave this window open — closing it stops the app."
+
+**Common problems at this stage:**
+
+- **'npm is not recognised' or 'command not found'** — Node.js isn't installed yet. Go to
+  nodejs.org, download the LTS version, and install it. Then close and reopen your terminal
+  and try again.
+- **Not sure of your folder path** — ask Claude Code: *"What is the full path to my project
+  folder?"* and it will tell you exactly what to type.
+- **'EADDRINUSE' or 'port already in use'** — something is already running on port 3000,
+  often a previous run of your app. Ask Claude Code to stop it, or restart your computer.
+- **localhost:3000 shows nothing** — check whether your terminal window is still open. If it
+  closed, run `node server.js` again.
 
 Then:
 > "Open your browser and go to **localhost:3000**
@@ -319,6 +335,10 @@ Steps:
 > "You can ask me to push your files to GitHub — just say 'push my files' and I'll run the
 > git commands for you. Or you can use the GitHub Desktop app if you prefer a visual interface."
 
+**If the push fails with an authentication error** — GitHub now requires a personal access
+token rather than a password. Ask Claude Code: *"My git push failed with an authentication
+error — can you help me fix it?"*
+
 **Why GitHub?** Every change you make in the future travels through GitHub to the live app.
 It also keeps a full history — you can always go back to an earlier version if something breaks.
 
@@ -347,6 +367,15 @@ You don't need to do anything else — the live app updates within a minute or t
 here too. Render shows a build log with the error message. If that happens, copy the error and
 paste it into Claude Code: "My Render deploy failed with this error: [paste it here]". Claude Code
 can diagnose the problem and fix the code, and the next push will trigger a new deploy automatically.
+
+**App deploys but crashes immediately** — the most common cause is a missing environment variable
+on Render. Check that every key from your local `.env` file has been added to Render's environment
+settings.
+
+**App is slow to load or takes a long time on first visit** — on Render's free tier, apps go to
+sleep after about 15 minutes of inactivity. The next visitor waits 30–60 seconds while it wakes
+up. This is normal, not a bug. Render's paid plans prevent it, but the free tier is fine for
+testing and learning.
 
 **Why Render?** It's free for small apps, connects directly to GitHub, and handles the technical
 side of running a server on the internet so you don't have to. It's ideal for testing and learning
@@ -424,6 +453,14 @@ ideal for learning and testing.
    > being generated. Just ask: 'What should my database table look like?' and I'll
    > suggest the right structure based on your app."
 4. Copy the **connection string** (called DATABASE_URL) from Supabase's settings.
+
+**If your database stops working unexpectedly** — Supabase's free tier pauses projects after
+a week of inactivity. Log in to supabase.com, find your project, and click the button to
+unpause it. It takes about a minute to restart.
+
+**Table name mismatch errors** — if you get 'table not found' errors, the name in the code
+doesn't match what you created in Supabase. Ask Claude Code: *"Can you check the table names
+in the code match what I set up in Supabase?"*
 
 ### Stage 3.2 — Connect to Your App
 
