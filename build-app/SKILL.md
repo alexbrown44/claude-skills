@@ -617,6 +617,11 @@ what starts to get more complex:
   Moving to a paid plan or a different hosting provider (AWS, Google Cloud) is possible but
   involves more configuration.
 
+**The honest truth:** you don't need to figure out what's next right now. The most valuable
+thing is to keep using what you've built, notice what's missing, and ask for it. That's how
+the Chess Trainer grew — not from a grand plan, but from using it and improving it one step
+at a time.
+
 **Costs to be aware of:**
 
 Everything in this skill uses free tiers — but each has limits worth knowing about:
@@ -633,11 +638,6 @@ shared widely, those fractions of a penny add up. A rough guide: 1,000 users eac
 requests is 10,000 API calls — likely a few pounds/dollars at most, but worth checking your
 usage in the Anthropic console if you start sharing the app publicly. You can also set a
 spending limit in your Anthropic account settings so there are no surprises.
-
-**The honest truth:** you don't need to figure out what's next right now. The most valuable
-thing is to keep using what you've built, notice what's missing, and ask for it. That's how
-the Chess Trainer grew — not from a grand plan, but from using it and improving it one step
-at a time.
 
 ---
 
