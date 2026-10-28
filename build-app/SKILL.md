@@ -339,6 +339,11 @@ Steps:
 **Auto-deploy:** From now on, every time you push to GitHub, Render redeploys automatically.
 You don't need to do anything else — the live app updates within a minute or two.
 
+**If something goes wrong:** Deploys don't always work first time — the Chess Trainer hit errors
+here too. Render shows a build log with the error message. If that happens, copy the error and
+paste it into Claude Code: "My Render deploy failed with this error: [paste it here]". Claude Code
+can diagnose the problem and fix the code, and the next push will trigger a new deploy automatically.
+
 **Why Render?** It's free for small apps, connects directly to GitHub, and handles the technical
 side of running a server on the internet so you don't have to. It's ideal for testing and learning
 — you can go from code to live app in minutes without any technical setup.
