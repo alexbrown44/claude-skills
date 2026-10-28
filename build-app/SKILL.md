@@ -539,6 +539,17 @@ the live app if you prefer.
 Each cycle typically takes minutes. Here are three real examples from the Chess Trainer to show
 what iteration looks like in practice:
 
+**What makes a good change description:**
+The examples below all worked because they described the *symptom or outcome*, not the technical
+solution. You don't need to know how to fix something — just describe what you're seeing or what
+you want. A few principles that help:
+- **Be specific.** "The button doesn't work" is harder to act on than "When I click Submit, nothing happens."
+- **Describe what you expected vs what you got.** "I expected the score to appear at the end, but the page just refreshes."
+- **For new features, say who does what.** "I want players to be able to type their name before starting, and see it on the coaching report at the end."
+- **For redesigns, say what's wrong with it now.** "The report is too long to read quickly — I want the key points at a glance."
+
+You never need to suggest a solution. That's Claude Code's job.
+
 **Example 1 — Fixing a bug**
 Players noticed that typing `0-0` to castle was always rejected as an illegal move, even when
 castling was perfectly valid. The fix wasn't obvious, but the description was simple:
