@@ -220,6 +220,14 @@ values. This file stays on your computer only — it is never pushed to GitHub.
 
 Claude Code will handle setting this up. When it asks for an API key, that's where to paste it.
 
+**Important — the .env file must never be uploaded to GitHub:**
+Claude Code will also create a file called `.gitignore` in your project folder. This is a list
+of files that should never be pushed to GitHub — and `.env` is always on it. You don't need to
+manage this yourself, but it's worth understanding: the `.gitignore` file is what keeps your
+API key off GitHub. If you ever look at your repo on GitHub and notice your `.env` file is
+missing — that's correct, and intentional. If it ever does appear there, ask Claude Code
+immediately: *"My .env file has been pushed to GitHub — what do I do?"*
+
 **If the app loads but API calls fail** — the first thing to check is whether the `.env` file
 exists and contains the correct key. Ask Claude Code: *"Can you check my .env file is set up
 correctly?"*
