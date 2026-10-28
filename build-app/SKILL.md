@@ -556,123 +556,18 @@ you want. A few principles that help:
 
 You never need to suggest a solution. That's Claude Code's job.
 
-**Example 1 — Fixing a bug**
-Players noticed that typing `0-0` to castle was always rejected as an illegal move, even when
-castling was perfectly valid. The fix wasn't obvious, but the description was simple:
-*"Every time I try to castle with 0-0, the app says it's illegal. I then have to challenge the
-move and it gets resolved. Why does this happen every time?"*
-Claude Code diagnosed the cause — the chess library only accepts `O-O` (the letter O, not the
-number zero) — and added a one-line fix that converts one to the other automatically.
-The user didn't need to understand the fix, just describe the symptom.
-
-**Example 2 — Redesigning a feature**
-The original coaching report was a long block of prose — useful, but hard to read quickly.
-The ask was: *"I think the feedback report is too long. Can we simplify it so it remains
-valuable but is more easily digestible?"*
-Claude Code proposed several options. The chosen one replaced the prose with a compact
-traffic-light card: a score out of 100, four coloured indicators (green/amber/red) for
-opening, tactics, development, and king safety, plus three bullet-point takeaways.
-Same information, far easier to scan. One conversation, no code written by the user.
-
-**Example 3 — Adding something new**
-Late in development, an idea came up: *"I'd like to add a nugget of chess history or trivia
-at the end of each report — like an easter egg. It should be random so you don't see the same
-thing twice. Is this doable?"*
-Claude Code added it in a single session — a "Did you know?" card with a gold left border,
-pulling a different piece of chess history each time. A small touch that makes the app more
-memorable. It wasn't in the original plan; it emerged through iteration.
-
-**Example 4 — A new capability unlocks new features**
-Once the Supabase database was connected to the Chess Trainer, two features that weren't
-possible before suddenly became straightforward to build:
-
-- *"Can we add a leaderboard that shows players ranked by their average score?"*
-- *"Can we add a My Games section where a player can look back at all their previous games
-  and re-read their coaching reports?"*
-
-Both were added in a single session, because the data was already being saved. The database
-didn't just store things — it opened the door to a whole category of features. This is a
-common pattern: each new capability you add multiplies what becomes possible next.
-
-**Example 5 — Progressive refinement over multiple sessions**
-The How to Play section started as a simple collapsible panel with basic instructions.
-Over several sessions it grew — each time a gap was spotted or a new user got confused:
-
-- *"Can we add an explanation of the Your Name field?"*
-- *"Can we add an About section?"*
-- *"New players don't know which side of the board is which — can we add something to explain that?"*
-- *"Can we show what check and checkmate notation looks like, and how to handle two knights
-  that can both move to the same square?"*
-
-Each addition was a single request. No session took more than a few minutes. The section
-became genuinely useful not because it was planned in full at the start, but because it was
-refined in response to real gaps as they emerged. That's the real rhythm of building — ship
-something, use it, notice what's missing, fix it.
-
-These five examples cover the main patterns of iteration you'll encounter: **fixing** a bug,
-**redesigning** something that works but could be better, **adding** a new idea, **building
-on a new capability**, and **progressively refining** something over time. All follow the
-same process — describe it in plain English, let Claude Code handle the rest.
-
-You wrote no code. Claude Code wrote it all. You directed the outcome.
+Read `references/iteration-examples.md` now for five real Chess Trainer examples covering
+the main patterns: fixing a bug, redesigning a feature, adding something new, a capability
+unlocking new features, and progressive refinement over multiple sessions. Share the relevant
+examples with the user as they come up naturally in the conversation.
 
 ---
 
 ## What next?
 
-You've now covered everything this skill teaches. But the app is yours, and there's plenty
-more you can do with it. Here's an honest picture of what's still within easy reach — and
-what starts to get more complex:
-
-**Still very much within reach:**
-- Keep iterating — new features, redesigns, bug fixes. The loop you've already learned works
-  for all of it. Claude Code remains your partner here.
-- Add more database tables — if your app grows and needs to save new types of data, the same
-  Supabase process applies.
-- Improve the design — describe what you want to look different and Claude Code will update it.
-- **Share it and get feedback** — send the URL to people and ask them specific questions:
-  *"What confused you? What would you add? What felt missing?"* Vague feedback ("looks good")
-  is hard to act on; specific feedback ("I didn't know where to start") gives you something
-  to fix. The Chess Trainer improved most through real users noticing things the builder
-  had stopped seeing.
-- **Get a custom domain** — your Render URL (something like `chess-trainer-8tp1.onrender.com`)
-  works perfectly, but you can replace it with your own address like `alexchesscoach.co.uk`.
-  You buy a domain name from a registrar (Namecheap, GoDaddy, and Google Domains are common
-  options — typically £10–£20 per year), then point it at your Render app in a few steps.
-  Render has a straightforward guide for this, and Claude Code can walk you through it.
-
-**Possible but significantly more complex:**
-- **User accounts and login** — letting people sign in with a username and password involves
-  authentication, session management, and security considerations. Doable with Claude Code,
-  but it's a bigger step.
-- **Taking payments** — integrating something like Stripe requires understanding payment flows
-  and security requirements. Claude Code can help, but you'll want to research what's involved
-  before starting.
-- **Scaling up** — if your app gets a lot of users, Render's free tier will hit its limits.
-  Moving to a paid plan or a different hosting provider (AWS, Google Cloud) is possible but
-  involves more configuration.
-
-**The honest truth:** you don't need to figure out what's next right now. The most valuable
-thing is to keep using what you've built, notice what's missing, and ask for it. That's how
-the Chess Trainer grew — not from a grand plan, but from using it and improving it one step
-at a time.
-
-**Costs to be aware of:**
-
-Everything in this skill uses free tiers — but each has limits worth knowing about:
-
-| Service | Free tier | When costs start |
-|---|---|---|
-| **Render** | Free, but app sleeps after 15 min inactivity | ~$7/month for a plan that stays awake |
-| **Supabase** | Free up to 500MB storage and 50,000 rows | Paid plans from $25/month |
-| **Anthropic API** | No free tier — pay per use from the start | Fractions of a penny per call; monitor at console.anthropic.com |
-| **Domain name** | N/A | ~$10–$20/year from a registrar (optional; prices vary by region) |
-
-The API cost is the one to watch. If your app uses Claude for every user interaction and gets
-shared widely, those fractions of a penny add up. A rough guide: 1,000 users each making 10
-requests is 10,000 API calls — likely a few pounds/dollars at most, but worth checking your
-usage in the Anthropic console if you start sharing the app publicly. You can also set a
-spending limit in your Anthropic account settings so there are no surprises.
+Read `references/what-next.md` and share it with the user. It covers: what's still within
+easy reach (iteration, design, sharing, custom domains), what gets significantly more complex
+(auth, payments, scaling), an honest closing note, and a full costs summary table.
 
 ---
 

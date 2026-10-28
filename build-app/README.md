@@ -52,10 +52,10 @@ get unstuck if anything isn't clear.
 
 **Or follow these steps yourself:**
 
-**Step 1 — Download the skill file**
+**Step 1 — Download the skill**
 
 Click the green **Code** button at the top of this page, then **Download ZIP**.
-Unzip the file — you'll find a file called `SKILL.md` inside the `build-app` folder.
+Unzip the file — you'll find a folder called `build-app` inside.
 
 **Step 2 — Create your project folder**
 
@@ -65,19 +65,30 @@ Create an empty folder on your computer where you'll build your app.
 **Step 3 — Create the skill folder path inside it**
 
 Inside your project folder, create this exact path of subfolders:
-`.claude` → `skills` → `build-app`
+`.claude` → `skills`
 
 To do this on Windows:
 - Right-click inside your project folder → **New → Folder** → name it `.claude`
 - Open `.claude` → create a folder called `skills`
-- Open `skills` → create a folder called `build-app`
 
 > **Note:** Folders starting with a dot (like `.claude`) are hidden by default on Windows.
 > To see them in File Explorer, click **View** and tick **Hidden items**.
 
-**Step 4 — Copy the skill file**
+**Step 4 — Copy the skill folder**
 
-Copy `SKILL.md` into the `build-app` folder you just created.
+Copy the entire `build-app` folder (not just the `SKILL.md` file inside it) into the
+`skills` folder you just created. The result should look like this:
+
+```
+your-project/
+└── .claude/
+    └── skills/
+        └── build-app/
+            ├── SKILL.md
+            └── references/
+                ├── iteration-examples.md
+                └── what-next.md
+```
 
 **Step 5 — Open Claude Code**
 
