@@ -600,6 +600,11 @@ what starts to get more complex:
   Supabase process applies.
 - Improve the design — describe what you want to look different and Claude Code will update it.
 - Share it — send the URL to people, get feedback, and use that feedback to iterate further.
+- **Get a custom domain** — your Render URL (something like `chess-trainer-8tp1.onrender.com`)
+  works perfectly, but you can replace it with your own address like `alexchesscoach.co.uk`.
+  You buy a domain name from a registrar (Namecheap, GoDaddy, and Google Domains are common
+  options — typically £10–£20 per year), then point it at your Render app in a few steps.
+  Render has a straightforward guide for this, and Claude Code can walk you through it.
 
 **Possible but significantly more complex:**
 - **User accounts and login** — letting people sign in with a username and password involves
