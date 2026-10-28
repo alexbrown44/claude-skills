@@ -9,7 +9,7 @@ description: >
   working app AND an understanding of what they built and why.
 ---
 
-# /build-app — Build Your First Web App
+# /build-app — Build Your Web App
 
 ## Welcome
 
