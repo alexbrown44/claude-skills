@@ -36,7 +36,7 @@ Ask freely. That's what Claude Code is for.
 ## What this skill does
 
 This skill guides a complete beginner through building and deploying a web app, step by step. It works
-in three stages, each a genuine stopping point. The user decides at each checkpoint whether to stop,
+in three checkpoints, each a genuine stopping point. The user decides at each checkpoint whether to stop,
 continue straight away, or come back later.
 
 - **Checkpoint 1** — Working app on your own computer (localhost)
@@ -450,12 +450,11 @@ ideal for learning and testing.
    > "A table is like a spreadsheet. Each row is one record (e.g. one game played),
    > each column is a piece of information (e.g. player name, score, date).
    >
-   > You don't need to figure out the table structure yourself — Claude Code can look at
-   > your app and suggest exactly what data makes sense to save. For the Chess Trainer,
-   > Claude Code proposed saving the player name, score, opening played, move count, and
-   > the full coaching report — because it could see from the app what information was
-   > being generated. Just ask: 'What should my database table look like?' and I'll
-   > suggest the right structure based on your app."
+   > Before creating the table in Supabase, ask Claude Code what structure makes sense:
+   > 'What should my database table look like?' — it can look at your app and suggest
+   > exactly what data to save. For the Chess Trainer, Claude Code proposed saving the
+   > player name, score, opening played, move count, and the full coaching report.
+   > Once you have the structure, create the table in Supabase, then come back here."
 4. Copy the **connection string** (called DATABASE_URL) from Supabase's settings.
 
 **If your database stops working unexpectedly** — Supabase's free tier pauses projects after
@@ -475,11 +474,11 @@ match what I set up in Supabase?"*
 2. Tell Claude Code to connect the database to the app — paste the same DATABASE_URL here too,
    so Claude Code can write the connection code. (Render needs it to run the app; Claude Code
    needs it to write the code that uses it — both steps are necessary.) Just say:
-   > "Connect my Supabase database to the app. Here's my DATABASE_URL: [paste it]. Tell me what
-   > you need to know about what I want to save."
-   Claude Code will ask what data the app should store, then write all the code to save and
-   retrieve it. For the Chess Trainer, this is how the game history, leaderboard, and My Games
-   features were added — Claude Code suggested the right table structure and wrote the connections.
+   > "Connect my Supabase database to the app. Here's my DATABASE_URL: [paste it]. The table
+   > is called [your table name] with columns [list them]."
+   Claude Code will write all the code to save and retrieve data using the table you already
+   created. For the Chess Trainer, this is how the game history, leaderboard, and My Games
+   features were connected — the table was already in Supabase, Claude Code wired it up.
 3. Push to GitHub — Render redeploys with the database connected.
 
 **If something goes wrong:** The same applies here as with the first deploy — errors will appear
@@ -499,7 +498,7 @@ walk you through it.
 > Here's what you've built:
 > - A web app running live on the internet
 > - Connected to a database that saves and retrieves data
-> - Auto-deploys whenever you push a change to GitHub
+> - Continues to auto-deploy whenever you push a change to GitHub
 >
 > To keep improving your app: describe changes to me in plain English, push to GitHub
 > (or ask me to push for you), and the live app updates automatically."
@@ -515,12 +514,15 @@ you didn't think of at the start. This is where vibe coding really shines.
 The loop is simple:
 
 1. **Describe the change** — tell Claude Code what you want in plain English.
-2. **Test** — either refresh localhost:3000, or push to GitHub and check the live app.
-   (Testing locally first is optional — you can push straight to GitHub and test on the live app.)
-3. **Push to GitHub** — tell Claude Code "push my changes to GitHub" and it will handle it.
+2. **Push to GitHub** — tell Claude Code "push my changes to GitHub" and it will handle it.
    (Behind the scenes this runs a command called `git push` — you don't need to know the
    details, but that's what's happening if you ever see it mentioned.)
-4. **Live on the web** — Render auto-deploys. The update is live within a minute or two.
+3. **Live on the web** — Render auto-deploys. The update is live within a minute or two.
+
+**Optional: test locally first.** Before pushing, you can refresh localhost:3000 to check
+the change looks right on your own computer. This is useful for catching obvious problems
+before they go live, but it's not required — you can push straight to GitHub and test on
+the live app if you prefer.
 
 Each cycle typically takes minutes. Here are three real examples from the Chess Trainer to show
 what iteration looks like in practice:
@@ -631,7 +633,7 @@ Everything in this skill uses free tiers — but each has limits worth knowing a
 | **Render** | Free, but app sleeps after 15 min inactivity | ~$7/month for a plan that stays awake |
 | **Supabase** | Free up to 500MB storage and 50,000 rows | Paid plans from $25/month |
 | **Anthropic API** | No free tier — pay per use from the start | Fractions of a penny per call; monitor at console.anthropic.com |
-| **Domain name** | N/A | £10–£20/year from a registrar (optional) |
+| **Domain name** | N/A | ~$10–$20/year from a registrar (optional; prices vary by region) |
 
 The API cost is the one to watch. If your app uses Claude for every user interaction and gets
 shared widely, those fractions of a penny add up. A rough guide: 1,000 users each making 10
