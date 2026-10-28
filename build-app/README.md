@@ -19,6 +19,9 @@ By the end of this skill you'll have:
 
 You write no code. Claude Code writes it all. You direct the outcome.
 
+**Stack:** JavaScript (Node.js) backend, plain HTML/CSS frontend. If you want to build in Python or
+another language, this skill won't apply.
+
 ---
 
 ## How it works

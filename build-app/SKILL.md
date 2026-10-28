@@ -39,6 +39,10 @@ This skill guides a complete beginner through building and deploying a web app, 
 in three checkpoints, each a genuine stopping point. The user decides at each checkpoint whether to stop,
 continue straight away, or come back later.
 
+**Stack:** The app you build will use JavaScript (Node.js) on the backend and plain HTML/CSS on the
+frontend. No frameworks, no prior coding knowledge required — but if you're set on building in Python
+or another language, this skill won't match what you're doing.
+
 - **Checkpoint 1** — Working app on your own computer (localhost)
 - **Checkpoint 2** — Live on the web (GitHub + Render)
 - **Checkpoint 3** — Stores data (Supabase database)
