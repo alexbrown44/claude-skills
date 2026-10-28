@@ -509,6 +509,10 @@ walk you through it.
 
 > "Your app now saves data to a database. 🎉
 >
+> That's a genuinely significant step. Your app can now do things a static website
+> fundamentally cannot — remember users, track history, rank scores, personalise
+> experiences. The database doesn't just store data; it's what makes the app feel alive.
+>
 > Here's what you've built:
 > - A web app running live on the internet
 > - Connected to a database that saves and retrieves data
@@ -626,7 +630,11 @@ what starts to get more complex:
 - Add more database tables — if your app grows and needs to save new types of data, the same
   Supabase process applies.
 - Improve the design — describe what you want to look different and Claude Code will update it.
-- Share it — send the URL to people, get feedback, and use that feedback to iterate further.
+- **Share it and get feedback** — send the URL to people and ask them specific questions:
+  *"What confused you? What would you add? What felt missing?"* Vague feedback ("looks good")
+  is hard to act on; specific feedback ("I didn't know where to start") gives you something
+  to fix. The Chess Trainer improved most through real users noticing things the builder
+  had stopped seeing.
 - **Get a custom domain** — your Render URL (something like `chess-trainer-8tp1.onrender.com`)
   works perfectly, but you can replace it with your own address like `alexchesscoach.co.uk`.
   You buy a domain name from a registrar (Namecheap, GoDaddy, and Google Domains are common
