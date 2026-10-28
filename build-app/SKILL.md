@@ -617,6 +617,23 @@ what starts to get more complex:
   Moving to a paid plan or a different hosting provider (AWS, Google Cloud) is possible but
   involves more configuration.
 
+**Costs to be aware of:**
+
+Everything in this skill uses free tiers — but each has limits worth knowing about:
+
+| Service | Free tier | When costs start |
+|---|---|---|
+| **Render** | Free, but app sleeps after 15 min inactivity | ~$7/month for a plan that stays awake |
+| **Supabase** | Free up to 500MB storage and 50,000 rows | Paid plans from $25/month |
+| **Anthropic API** | No free tier — pay per use from the start | Fractions of a penny per call; monitor at console.anthropic.com |
+| **Domain name** | N/A | £10–£20/year from a registrar (optional) |
+
+The API cost is the one to watch. If your app uses Claude for every user interaction and gets
+shared widely, those fractions of a penny add up. A rough guide: 1,000 users each making 10
+requests is 10,000 API calls — likely a few pounds/dollars at most, but worth checking your
+usage in the Anthropic console if you start sharing the app publicly. You can also set a
+spending limit in your Anthropic account settings so there are no surprises.
+
 **The honest truth:** you don't need to figure out what's next right now. The most valuable
 thing is to keep using what you've built, notice what's missing, and ask for it. That's how
 the Chess Trainer grew — not from a grand plan, but from using it and improving it one step
