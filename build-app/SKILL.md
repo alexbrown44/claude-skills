@@ -246,8 +246,12 @@ Present both options together so they can see what's involved either way:
 > I can run commands directly on your computer, so you don't have to open one yourself.)
 >
 > **Option 2 (do it yourself):**
-> Press the Windows key, type **cmd**, press Enter. A black window opens — that's the Command Prompt.
-> Type: `cd C:\path\to\your\folder` (replace with your actual folder path) and press Enter.
+> Open a terminal window:
+> - **Windows:** Press the Windows key, type **cmd**, press Enter. A black window opens — that's the Command Prompt.
+> - **Mac:** Press **Cmd + Space**, type **Terminal**, press Enter.
+>
+> Type: `cd /path/to/your/folder` (replace with your actual folder path) and press Enter.
+> On Windows the path looks like `C:\Users\yourname\my-app`; on Mac it looks like `/Users/yourname/my-app`.
 > This navigates to your project folder — like opening a drawer before you can use what's inside.
 >
 > Then run these two commands, one at a time:
