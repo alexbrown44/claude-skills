@@ -64,8 +64,8 @@ Before anything else, show the user what was built using this exact process:
 > personalised coaching report on how you played. It uses the Claude AI to generate moves
 > and feedback, saves your game history to a database, and has a leaderboard.
 >
-> It was built by a non-developer using Claude Code — no prior coding experience. The code
-> was written entirely by Claude; the person directed what to build.
+> It was built by Alex, a non-developer, using Claude Code — no prior coding experience. The code
+> was written entirely by Claude; Alex directed what to build.
 >
 > That's what we're going to do with your idea."
 
