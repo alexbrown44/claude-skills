@@ -424,8 +424,10 @@ ideal for learning and testing.
 ### Stage 3.2 — Connect to Your App
 
 1. Add DATABASE_URL to Render as an environment variable (same place as your API key).
-2. Tell Claude Code to connect the database to the app. You don't need to understand the code
-   for this — just say:
+   This is so the live app on Render can connect to the database when it's running.
+2. Tell Claude Code to connect the database to the app — paste the same DATABASE_URL here too,
+   so Claude Code can write the connection code. (Render needs it to run the app; Claude Code
+   needs it to write the code that uses it — both steps are necessary.) Just say:
    > "Connect my Supabase database to the app. Here's my DATABASE_URL: [paste it]. Tell me what
    > you need to know about what I want to save."
    Claude Code will ask what data the app should store, then write all the code to save and
