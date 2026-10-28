@@ -213,12 +213,14 @@ Walk the user through this carefully. They may never have used a terminal before
 
 **Installing dependencies:**
 
-> "Your app uses some ready-made libraries — tools other developers have built that your app relies
+>"Your app uses some ready-made libraries — tools other developers have built that your app relies
 > on. For example, the Chess Trainer used:
 > - **express** — runs the web server on your computer
 > - **chess.js** — handles chess move rules
-> - **pg** — connects to the database
 > - **express-rate-limit** — stops the app being overloaded with requests
+>
+> (If you add a database later, more libraries get added at that point — for example **pg**, which
+> connects to a PostgreSQL database. But that's Checkpoint 3, not now.)
 >
 > You install them all in one go. You only need to do this once."
 
