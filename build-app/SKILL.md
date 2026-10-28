@@ -504,6 +504,36 @@ walk you through it.
 > To keep improving your app: describe changes to me in plain English, push to GitHub
 > (or ask me to push for you), and the live app updates automatically."
 
+### What next?
+
+You've now covered everything this skill teaches. But the app is yours, and there's plenty
+more you can do with it. Here's an honest picture of what's still within easy reach — and
+what starts to get more complex:
+
+**Still very much within reach:**
+- Keep iterating — new features, redesigns, bug fixes. The loop you've already learned works
+  for all of it. Claude Code remains your partner here.
+- Add more database tables — if your app grows and needs to save new types of data, the same
+  Supabase process applies.
+- Improve the design — describe what you want to look different and Claude Code will update it.
+- Share it — send the URL to people, get feedback, and use that feedback to iterate further.
+
+**Possible but significantly more complex:**
+- **User accounts and login** — letting people sign in with a username and password involves
+  authentication, session management, and security considerations. Doable with Claude Code,
+  but it's a bigger step.
+- **Taking payments** — integrating something like Stripe requires understanding payment flows
+  and security requirements. Claude Code can help, but you'll want to research what's involved
+  before starting.
+- **Scaling up** — if your app gets a lot of users, Render's free tier will hit its limits.
+  Moving to a paid plan or a different hosting provider (AWS, Google Cloud) is possible but
+  involves more configuration.
+
+**The honest truth:** you don't need to figure out what's next right now. The most valuable
+thing is to keep using what you've built, notice what's missing, and ask for it. That's how
+the Chess Trainer grew — not from a grand plan, but from using it and improving it one step
+at a time.
+
 ---
 
 ## Iterating After Any Checkpoint
