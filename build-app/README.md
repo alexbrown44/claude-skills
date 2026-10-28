@@ -37,6 +37,21 @@ At each checkpoint you choose: stop here, continue, or come back later.
 
 ## How to install this skill
 
+**Not sure where to start? Ask Claude to help you.**
+
+Open [claude.ai](https://claude.ai) in your browser and paste this message:
+
+> "I want to install a Claude Code skill called build-app. The skill file is called SKILL.md
+> and I've downloaded it from GitHub. Can you walk me through where to put it on my computer
+> so I can use it in Claude Code? I'm on Windows."
+
+Claude will walk you through each step in plain language, answer your questions, and help you
+get unstuck if anything isn't clear.
+
+---
+
+**Or follow these steps yourself:**
+
 **Step 1 — Download the skill file**
 
 Click the green **Code** button at the top of this page, then **Download ZIP**.
