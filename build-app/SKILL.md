@@ -78,18 +78,12 @@ within reach. Then continue to Step 0.
 
 Before doing anything, find out where the user is. Ask:
 
-> "Before we start — is this your first time building an app with this skill, are you returning to
-> continue one you started before, or are you starting fresh with a new app?"
+> "Before we start — are you building a new app, or returning to continue one you started before?"
 
-**If new:** Welcome them warmly. Explain what they're about to do in one plain sentence:
+**If building a new app:** Welcome them warmly. Explain what they're about to do in one plain sentence:
 > "We're going to build a web app together. I'll write all the code — your job is to describe what you
 > want. We'll go step by step, and I'll explain what's happening as we go."
 Then proceed to Checkpoint 1.
-
-**If building a new app (already done this before):** Acknowledge that they already know how
-this works — no need to re-explain the basics unless they want a refresher. Jump straight to
-Stage 1.0 (developing the idea in Claude.ai first). Their existing app isn't relevant here;
-treat this as a clean start for the new one.
 
 **If returning to an existing app:** They need re-orienting. Ask:
 
