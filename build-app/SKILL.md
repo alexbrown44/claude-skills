@@ -266,9 +266,8 @@ Once the app is running locally, stop and ask:
 > "Your app is running at localhost:3000. 🎉
 >
 > What would you like to do next?
-> 1. **Stop here** — you're happy with a local app for now.
-> 2. **Continue** — put the app on the internet so anyone can use it (takes about 15 minutes).
-> 3. **Come back later** — save your progress and return another time to go live."
+> 1. **Continue** — put the app on the internet so anyone can use it (takes about 15 minutes).
+> 2. **Stop for now** — you're done for today and will come back to go live another time."
 
 If they stop or return later, tell them:
 > "Before you close anything — note this down so you know exactly how to pick up where you left off:
@@ -365,9 +364,8 @@ Once the app is live, stop and ask:
 > to come back. That's what Checkpoint 3 adds.
 >
 > What would you like to do next?
-> 1. **Stop here** — a live web app is exactly what you needed.
-> 2. **Continue** — add a database so your app can save and retrieve data (scores, history, records, etc.).
-> 3. **Come back later** — return when you're ready to add data storage."
+> 1. **Continue** — add a database so your app can save and retrieve data (scores, history, records, etc.).
+> 2. **Stop for now** — you're done for today and will come back to add a database another time."
 
 If they stop or return later, tell them:
 > "Before you close anything — note this down so you know exactly how to pick up where you left off:
