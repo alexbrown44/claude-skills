@@ -18,6 +18,19 @@ You found a file on GitHub, downloaded it, and set it up in Claude Code. That's 
 the same process you'll use in Checkpoint 2 to publish your own app. GitHub is already
 familiar territory.
 
+**One thing to know before we start:** Claude Code is not just a code generator — it's more like
+having a very generous, very patient software engineer sitting next to you. It will build things
+for you, yes. But it will also explain what it's doing and why, answer questions at any point,
+help you understand an error message, talk through a decision, or just clarify something that
+isn't making sense.
+
+You never need to feel stuck or lost on your own. If something isn't clear, ask. If something
+goes wrong, describe it. If you want to understand what just happened, say so. There are no
+stupid questions here — the whole point is that you finish this with both a working app and a
+genuine understanding of how it was built.
+
+Ask freely. That's what Claude Code is for.
+
 ---
 
 ## What this skill does
