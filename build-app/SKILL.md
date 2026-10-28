@@ -424,10 +424,19 @@ ideal for learning and testing.
 ### Stage 3.2 — Connect to Your App
 
 1. Add DATABASE_URL to Render as an environment variable (same place as your API key).
-2. Update the app code to save and fetch data — ask Claude Code to add the database calls.
-   > "I'll update the server code to connect to your database. Tell me what you want to save
-   > and what you want to be able to look up — I'll write the code to do it."
+2. Tell Claude Code to connect the database to the app. You don't need to understand the code
+   for this — just say:
+   > "Connect my Supabase database to the app. Here's my DATABASE_URL: [paste it]. Tell me what
+   > you need to know about what I want to save."
+   Claude Code will ask what data the app should store, then write all the code to save and
+   retrieve it. For the Chess Trainer, this is how the game history, leaderboard, and My Games
+   features were added — Claude Code suggested the right table structure and wrote the connections.
 3. Push to GitHub — Render redeploys with the database connected.
+
+**If something goes wrong:** The same applies here as with the first deploy — errors will appear
+in Render's build log or in your app's behaviour. Copy any error message and paste it into Claude
+Code: "I'm getting this error after connecting the database: [paste it]". Claude Code will
+diagnose it and fix the code.
 
 **Tip:** You don't need to figure any of this out alone — just ask at each step and I'll
 walk you through it.
