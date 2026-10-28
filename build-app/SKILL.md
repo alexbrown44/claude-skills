@@ -357,6 +357,8 @@ and it will guide you through generating one in your GitHub settings and using i
 
 **Why GitHub?** Every change you make in the future travels through GitHub to the live app.
 It also keeps a full history — you can always go back to an earlier version if something breaks.
+If a change ever makes things worse, just ask Claude Code: *"The last change broke something —
+can we go back to how it was before?"* It will use the version history to undo it.
 
 ### Stage 2.2 — Deploy to Render
 
