@@ -171,6 +171,42 @@ Use the prompt to generate the app files. As the files are created, briefly expl
 **Why these files exist:** A web app has two parts — the front (what you see) and the back (what runs
 the logic, keeps secrets like API keys, and talks to external services). Claude Code creates both.
 
+**About API keys — and why they must stay secret:**
+
+If your app connects to an external service, you'll need an API key for it. An API key is a private
+password that identifies your app to that service and authorises it to use it (often at a cost).
+
+The Chess Trainer, for example, calls the Claude AI to generate chess moves and coaching feedback.
+To do that, it needed an Anthropic API key. That key was created at **console.anthropic.com** — the
+Anthropic developer dashboard — and added to the local setup as an environment variable (explained
+below). Every time a user plays a move, the app makes a call to Claude using that key, and the
+account that owns the key is charged a tiny fraction of a penny for it.
+
+Not every app needs an API key. But if your app uses any external service — AI, maps, weather data,
+payment processing, email sending, translation, and so on — it will almost certainly need one.
+Examples:
+- A weather app might use an **OpenWeatherMap API key**
+- A payment feature would use a **Stripe API key**
+- An app that sends emails might use a **SendGrid API key**
+
+The fact that you're building with Claude Code doesn't mean your app has to use the Claude AI —
+it's just the tool you're building with. Your app can use any external service it needs.
+
+**Why API keys must never appear in your code files:**
+
+Your code files will be uploaded to GitHub (a public website) in Checkpoint 2. If an API key is
+written directly into a code file, anyone in the world can find it, copy it, and use your account —
+running up charges or accessing your data.
+
+The safe approach is to store API keys as **environment variables** — values that live on your
+computer (or server) separately from the code, and are never uploaded anywhere. The code refers to
+them by name (e.g. `process.env.ANTHROPIC_API_KEY`) without ever containing the key itself.
+
+For the local build, Claude Code will create a `.env` file in your project folder to hold these
+values. This file stays on your computer only — it is never pushed to GitHub.
+
+Claude Code will handle setting this up. When it asks for an API key, that's where to paste it.
+
 ### Stage 1.3 — Install and Run Locally
 
 Walk the user through this carefully. They may never have used a terminal before.
