@@ -476,8 +476,9 @@ ideal for learning and testing.
 4. Copy the **connection string** (called DATABASE_URL) from Supabase's settings.
 
 **If your database stops working unexpectedly** — Supabase's free tier pauses projects after
-a week of inactivity. Log in to supabase.com, find your project, and click the button to
-unpause it. It takes about a minute to restart.
+a week of inactivity. Log in to supabase.com, find your project — it will show a
+**"Restore project"** button on the project card. Click it and wait about a minute for it
+to restart.
 
 **Errors containing 'does not exist' or 'relation not found'** — this usually means the name
 of a table or column in the code doesn't exactly match what you created in Supabase (even a
