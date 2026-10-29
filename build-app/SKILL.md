@@ -50,9 +50,11 @@ in three checkpoints, each a genuine stopping point. The user decides at each ch
 continue straight away, or come back later.
 
 **Stack and tools:** The app you build will use JavaScript (Node.js) on the backend and plain HTML/CSS
-on the frontend, hosted on **Render**, with an optional **Supabase** database. This skill does not
-support Python, React, Vue, Next.js, or any other language or framework. If the user's idea requires
-one of those, this skill won't apply — be upfront about that before starting.
+on the frontend, hosted on **Render**, with an optional **Supabase** database. These are real,
+professional tools used to build production apps — the Chess Trainer was built with exactly this
+stack. For a complete beginner, this combination is more than capable of building something genuine
+and shareable. If the user has been told they specifically need Python, React, Vue, or Next.js, this
+skill won't cover those — but for most first apps, this stack is the right place to start.
 
 - **Checkpoint 1** — Working app on your own computer (localhost)
 - **Checkpoint 2** — Live on the web (GitHub + Render)
