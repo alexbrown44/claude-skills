@@ -498,7 +498,14 @@ match what I set up in Supabase?"*
    Claude Code will write all the code to save and retrieve data using the table you already
    created. For the Chess Trainer, this is how the game history, leaderboard, and My Games
    features were connected — the table was already in Supabase, Claude Code wired it up.
-3. Push to GitHub — Render redeploys with the database connected.
+3. Claude Code will also add `pg` (the PostgreSQL library) to your app — run `npm install`
+   when prompted, just as you did in Checkpoint 1.
+4. At this point, ask Claude Code what new features the database makes possible:
+   > "Now that the database is connected, what features can we add?"
+   For the Chess Trainer, this unlocked a leaderboard and a My Games section — features
+   that weren't possible before because there was nowhere to save the data. Your database
+   will open up similar possibilities for your app.
+5. Push to GitHub — Render redeploys with the database connected.
 
 **If something goes wrong:** The same applies here as with the first deploy — errors will appear
 in Render's build log or in your app's behaviour. Copy any error message and paste it into Claude
