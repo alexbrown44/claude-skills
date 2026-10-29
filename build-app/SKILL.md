@@ -109,8 +109,8 @@ Then proceed to Checkpoint 1.
 Then ask only what you need based on their answer:
 
 - **Returning to finish Checkpoint 1** (app not running yet):
-  "What's the name of your app, and where is the project folder on your computer?"
-  Then pick up at the right stage within Checkpoint 1.
+  Ask what the app is called, then pick up at the right stage within Checkpoint 1.
+  (They're already in the right folder — no need to ask for the path.)
 
 - **Moving from Checkpoint 1 to Checkpoint 2** (app works locally, not yet on the web):
   They haven't set up GitHub or Render yet — start Checkpoint 2 from the beginning.
