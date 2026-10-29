@@ -44,8 +44,8 @@ in three checkpoints, each a genuine stopping point. The user decides at each ch
 continue straight away, or come back later.
 
 **Stack:** The app you build will use JavaScript (Node.js) on the backend and plain HTML/CSS on the
-frontend. No frameworks, no prior coding knowledge required — but if you're set on building in Python
-or another language, this skill won't match what you're doing.
+frontend. This skill does not support Python, React, Vue, Next.js, or any other language or framework.
+If the user's idea requires one of those, this skill won't apply — be upfront about that before starting.
 
 - **Checkpoint 1** — Working app on your own computer (localhost)
 - **Checkpoint 2** — Live on the web (GitHub + Render)
@@ -144,6 +144,13 @@ user mentions saving data, user accounts, or a leaderboard, note that those are 
 Checkpoint 3 — but keeping them out of the first build means a faster, cleaner start. Tell them:
 > "We'll leave the database out for now — that's Checkpoint 3. The first version will be a
 > fully working app; we add the ability to save data once it's live."
+
+**Important — check the stack.** Before approving the prompt, verify it doesn't mention React, Vue,
+Next.js, Python, Flask, or any other framework or language. If it does, rewrite that part to use
+Node.js and plain HTML/CSS. Tell the user:
+> "I've kept the tech stack to Node.js and plain HTML — that's what this skill builds with.
+> If you specifically need [framework], this skill won't cover it, but for most apps this stack
+> works perfectly well."
 
 **Why this step matters:** The prompt is your blueprint. Claude Code generates all the files from it —
 a vague prompt produces a vague app. One clear paragraph saves hours of back-and-forth.
