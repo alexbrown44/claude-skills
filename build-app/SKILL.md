@@ -51,7 +51,7 @@ continue straight away, or come back later.
 
 **Stack and tools:** The app you build will use JavaScript (Node.js) on the backend and plain HTML/CSS
 on the frontend, hosted on **Render**, with an optional **Supabase** database. These are real,
-professional tools used to build production apps — the Chess Trainer was built with exactly this
+professional tools used to build production apps — the Chess Trainer (a real app used as a worked example throughout this skill) was built with exactly this
 stack. For a complete beginner, this combination is more than capable of building something genuine
 and shareable. If the user has been told they specifically need Python, React, Vue, or Next.js, this
 skill won't cover those — but for most first apps, this stack is the right place to start.
