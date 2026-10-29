@@ -7,6 +7,8 @@ what you built and why.
 Built and used to create the [Chess Trainer app](https://chess-trainer-8tp1.onrender.com) —
 a real example of what you can build using this exact process.
 
+![Chess Trainer app](screenshot.png)
+
 ---
 
 ## What you'll build
