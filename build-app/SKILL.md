@@ -139,9 +139,10 @@ Before writing any code, you need a clear picture of what you're building. Start
 > NOT do or include?"
 
 That last question matters — being clear about what the app *shouldn't* do prevents Claude Code from
-adding things the user doesn't want. (When building the Chess Trainer, the first prompt produced an
-app with a live online chess board. One revision clarifying "chess logic runs offline in the browser"
-fixed it entirely.)
+adding things the user doesn't want. (When building the Chess Trainer, the drafted prompt included
+a live online chess board — not what was wanted. Reading through the prompt carefully before building
+caught it, and one revision clarifying "chess logic runs offline in the browser" fixed it entirely.
+This is exactly why Stage 1.1 asks you to read and approve the prompt before anything is built.)
 
 Once you understand the app, help the user write a clear, focused prompt. Show it to them and explain
 each part before proceeding:
