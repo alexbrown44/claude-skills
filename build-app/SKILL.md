@@ -365,7 +365,9 @@ Before getting into the steps, explain the difference between Git and GitHub —
 **Before starting:** check two things are in place:
 - **Git installed** — check this yourself by running `git --version` in the terminal. If it's
   not installed, tell the user to go to git-scm.com/downloads, install it (free, two minutes),
-  and restart Claude Code before continuing.
+  and restart Claude Code before continuing. When they reopen Claude Code, they'll need to
+  open the same project folder, type `/build-app`, and tell it: "I'm returning to continue
+  from Checkpoint 2 — I've just installed Git."
 - **GitHub account** — ask if they have one. If not, create one at github.com (free, one minute).
 
 Steps:
