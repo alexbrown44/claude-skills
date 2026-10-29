@@ -564,7 +564,7 @@ If `references/iteration-examples.md` exists, read it now and share a brief summ
 examples with the user, so they can see the full range of what iteration can look like.
 
 **What makes a good change description:**
-The examples below all worked because they described the *symptom or outcome*, not the technical
+The iteration examples all worked because they described the *symptom or outcome*, not the technical
 solution. You don't need to know how to fix something — just describe what you're seeing or what
 you want. A few principles that help:
 - **Be specific.** "The button doesn't work" is harder to act on than "When I click Submit, nothing happens."
