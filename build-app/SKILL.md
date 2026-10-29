@@ -458,20 +458,16 @@ ideal for learning and testing.
 
 1. Create an account at supabase.com — sign up with GitHub (one click).
 2. Create a new project — give it the same name as your app.
-3. Create a table — define the data you want to store.
+3. Create a table — ask Claude Code to do this for you.
    > "A table is like a spreadsheet. Each row is one record (e.g. one game played),
    > each column is a piece of information (e.g. player name, score, date).
    >
-   > Before creating the table in Supabase, ask Claude Code what structure makes sense:
-   > 'What should my database table look like?' — it can look at your app and suggest
-   > exactly what data to save. For the Chess Trainer, Claude Code proposed saving the
-   > player name, score, opening played, move count, and the full coaching report.
+   > Ask Claude Code: 'I've created a Supabase project. Can you create the database table
+   > for my app and set it up in Supabase?' — give it your DATABASE_URL and it will handle
+   > the rest. For the Chess Trainer, Claude Code created a table storing the player name,
+   > score, opening played, move count, and full coaching report.
    >
-   > To create the table in Supabase: in your project, go to **Table Editor** in the left
-   > sidebar → **New table**. Give it a name, then add columns one by one — each column
-   > needs a name and a type (use `text` for words, `int8` for whole numbers, `float8` for
-   > decimals, `timestamp` for dates/times). Once you have the structure, create the table,
-   > then come back here."
+   > Once Claude Code confirms the table is created, come back here."
 4. Copy the **connection string** (called DATABASE_URL) from Supabase's settings.
 
 **If your database stops working unexpectedly** — Supabase's free tier pauses projects after
