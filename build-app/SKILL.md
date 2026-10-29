@@ -419,7 +419,7 @@ Once the app is live, take a moment to mark it properly before moving on:
 > When you're ready — at this point you might find yourself thinking: it works, but it doesn't remember anything.
 > Every session starts fresh — no history, no scores, no way for users to see how they've
 > improved over time. That's exactly what happened with the Chess Trainer. The first version
-> was live and working, but the builder then decided they wanted a leaderboard and a way for
+> was live and working, but Alex then decided he wanted a leaderboard and a way for
 > players to review their past games — to make the app more engaging and give people a reason
 > to come back. That's what Checkpoint 3 adds.
 >
