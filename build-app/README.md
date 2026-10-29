@@ -59,8 +59,8 @@ get unstuck if anything isn't clear.
 
 **Step 1 — Download the skill**
 
-Go to **https://github.com/alexbrown44/claude-skills**, click the green **Code** button
-(top right of the file listing), then **Download ZIP**.
+**[Click here to download](https://github.com/alexbrown44/claude-skills/archive/refs/heads/main.zip)**
+
 Unzip the file — you'll find a folder called `build-app` inside.
 
 **Step 2 — Create your project folder**
