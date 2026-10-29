@@ -510,12 +510,10 @@ ideal for learning and testing.
    > project go to **Table Editor** in the left sidebar → **New table**. Give it a name,
    > then add columns one by one — each needs a name and a type (`text` for words, `int8`
    > for whole numbers, `float8` for decimals, `timestamp` for dates/times)."
-4. Copy the **connection string** (called DATABASE_URL) from Supabase. To find it: in your
-   project, click **Connect** at the top of the page. You'll see several connection options —
-   look for the **Transaction Pooler** or **Session Pooler** option (not Direct Connection)
-   and copy the connection string from there. It starts with `postgresql://`. If you're unsure
-   which to pick, ask Claude Code: *"I'm on the Supabase Connect page — which connection
-   string should I use?" — or take a screenshot of the Connect page and paste it here.*
+4. Copy the **connection string** (called DATABASE_URL) from Supabase. In your project, click
+   **Connect** at the top of the page — then take a screenshot and paste it here. The Supabase
+   UI changes regularly and tab names vary; a screenshot lets Claude Code see exactly what's on
+   screen and tell you precisely which string to copy. It starts with `postgresql://`.
 
 **If your database stops working unexpectedly** — Supabase's free tier pauses projects after
 a week of inactivity. Log in to supabase.com, find your project — it will show a
