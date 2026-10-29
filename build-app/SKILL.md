@@ -356,6 +356,12 @@ Explain GitHub before touching it:
 > Have a look — you'll see the files Claude Code created, the full version history, and how it's
 > all organised. Your repo will look just like this."
 
+Before getting into the steps, explain the difference between Git and GitHub — beginners almost always confuse them:
+> "Two things work together here. **Git** is software installed on your computer — it tracks every
+> change you make to your code and handles moving it online. **GitHub** is a website where your
+> code is stored — like Google Drive, but built for software. Git does the work; GitHub is where
+> the code lives. You need both."
+
 **Before starting:** check two things are in place:
 - **Git installed** — check this yourself by running `git --version` in the terminal. If it's
   not installed, tell the user to go to git-scm.com/downloads, install it (free, two minutes),
