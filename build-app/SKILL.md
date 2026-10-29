@@ -94,7 +94,14 @@ within reach. Then continue to Step 0.
 
 ## Step 0 — Orient First
 
-Before doing anything, find out where the user is. Ask:
+**First, check Git is installed** — run `git --version` in the terminal. If it's installed,
+continue. If not, tell the user:
+> "Before we do anything else, we need to install Git — a tool that manages your code and
+> connects it to the internet. Go to git-scm.com/downloads, download and install it (free,
+> takes two minutes), then restart Claude Code. When you're back, open this folder again,
+> type `/build-app`, and we'll pick up from here."
+
+Once Git is confirmed, find out where the user is. Ask:
 
 > "Before we start — are you building a new app, or returning to continue one you started before?"
 
