@@ -20,7 +20,7 @@ here is more straightforward. And the process you just followed — downloading 
 putting files in the right place — is exactly what you'll do in Checkpoint 2 to publish your
 own app. GitHub is already familiar territory.
 
-**One thing to know before we start:** Claude Code is not just a code generator — it's more like
+**One thing to know before we continue:** Claude Code is not just a code generator — it's more like
 having a very generous, very patient software engineer sitting next to you. It will build things
 for you, yes. But it will also explain what it's doing and why, answer questions at any point,
 help you understand an error message, talk through a decision, or just clarify something that
