@@ -31,6 +31,10 @@ genuine understanding of how it was built.
 
 Ask freely. That's what Claude Code is for.
 
+**One tip that helps throughout:** if you're ever unsure where to find something on a website —
+an API key, a connection string, a settings page — take a screenshot and paste it directly into
+Claude Code. It can see exactly what you're looking at and tell you precisely where to click.
+
 **How long does this take?** About one hour to get a working app live on the internet.
 Add another hour if you want a database. You don't need to do it all in one sitting —
 each checkpoint is a natural stopping point.
@@ -218,6 +222,7 @@ they need — if they've built an app before they may already have one. Ask:
 
 If they already have one, skip straight to adding it to the `.env` file. If not, walk them to
 the right place to create it (e.g. console.anthropic.com for the Anthropic API) and then add it.
+If they're unsure where to find it, ask them to take a screenshot and paste it here.
 
 **Important — the .env file must never be uploaded to GitHub:**
 Claude Code will also create a file called `.gitignore` in your project folder. This is a list
@@ -368,7 +373,8 @@ Explain Render:
 Steps:
 1. Go to render.com — sign up using your GitHub account (one click, no separate password).
 2. Create a new **Web Service** — point it at your GitHub repository.
-3. Add environment variables — any API keys go here.
+3. Add environment variables — any API keys go here. If you're unsure where to find this in
+   Render, take a screenshot and paste it into Claude Code.
    > "Remember the `.env` file on your computer that kept your API key safe locally? Render has
    > the same concept, but for the live app. Instead of a file on your computer, you add the key
    > directly into Render's settings — it stores it securely on their servers, separate from your
@@ -479,7 +485,7 @@ ideal for learning and testing.
    look for the **Transaction Pooler** or **Session Pooler** option (not Direct Connection)
    and copy the connection string from there. It starts with `postgresql://`. If you're unsure
    which to pick, ask Claude Code: *"I'm on the Supabase Connect page — which connection
-   string should I use?"*
+   string should I use?" — or take a screenshot of the Connect page and paste it here.*
 
 **If your database stops working unexpectedly** — Supabase's free tier pauses projects after
 a week of inactivity. Log in to supabase.com, find your project — it will show a
