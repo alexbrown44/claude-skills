@@ -53,7 +53,7 @@ The app can connect to external services via API — AI tools, maps, weather dat
 That's what makes it a real app rather than a static web page.
 
 **Stack and tools:** The app you build will use JavaScript (Node.js) on the backend and plain HTML/CSS
-on the frontend, stored on **GitHub**, hosted on **Render**, with an optional **Supabase** database.
+on the frontend, managed with **Git**, stored on **GitHub**, hosted on **Render**, with an optional **Supabase** database.
 It can connect to external services via API — giving it real capabilities like AI, maps, payments, or
 anything else that offers an API. These are real,
 professional tools used to build production apps — the Chess Trainer (a real app used as a worked example throughout this skill) was built with exactly this
