@@ -356,9 +356,14 @@ Explain GitHub before touching it:
 > Have a look — you'll see the files Claude Code created, the full version history, and how it's
 > all organised. Your repo will look just like this."
 
+**Before starting:** check two things are in place:
+- **Git installed** — ask the user to open the terminal and type `git --version`. If it returns
+  a version number, Git is installed. If not, send them to git-scm.com/downloads to install it
+  (free, takes two minutes) and restart Claude Code afterwards.
+- **GitHub account** — ask if they have one. If not, create one at github.com (free, one minute).
+
 Steps:
-1. Create a GitHub account at github.com (free). Skip if they already have one.
-2. Create a new repository — name it after the app, keep it public.
+1. Create a new repository on GitHub — name it after the app, keep it public.
 3. Push the files:
 > "You can ask me to push your files to GitHub — just say 'push my files' and I'll run the
 > git commands for you. Or you can use the GitHub Desktop app if you prefer a visual interface."

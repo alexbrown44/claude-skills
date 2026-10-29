@@ -105,6 +105,8 @@ Open Claude Code and open your project folder. Type `/build-app` to begin.
 ## Requirements
 
 - [Claude Code](https://claude.ai/code) installed on your computer
+- [Git](https://git-scm.com/downloads) installed on your computer (needed for Checkpoint 2)
+- A free [GitHub account](https://github.com) (needed for Checkpoint 2)
 - A free [Anthropic account](https://console.anthropic.com) (for the API key your app will use)
 - Windows, Mac, or Linux
 
