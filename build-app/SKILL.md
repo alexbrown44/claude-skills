@@ -138,6 +138,17 @@ each part before proceeding:
 **Why this step matters:** The prompt is your blueprint. Claude Code generates all the files from it —
 a vague prompt produces a vague app. One clear paragraph saves hours of back-and-forth.
 
+### Stage 1.1 — Approve the Prompt
+
+Before writing a single line of code, show the user the full prompt and ask them to read it carefully:
+
+> "Here's the prompt I'll use to build your app. Read it through — does it describe what you want?
+> Is anything missing, wrong, or included that you don't want?
+> Once you're happy with it, say 'go ahead' and I'll start building."
+
+Do not start building until they explicitly confirm. This is their last easy chance to change
+direction — once the build starts, changes require iteration rather than a fresh start.
+
 ### Stage 1.2 — Build with Claude Code
 
 Use the prompt to generate the app files. As the files are created, briefly explain what each one does:
