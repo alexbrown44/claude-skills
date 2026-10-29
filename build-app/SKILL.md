@@ -620,9 +620,10 @@ If `references/iteration-examples.md` is not present, continue without it.
 
 ## What next?
 
-Your app is built and live. The skills you've picked up — describing what you want, iterating
-on what exists, reading error messages, asking for help — are the same ones used to build
-anything more ambitious. There's no ceiling on where this goes next.
+Your app is built and live. The skills you've picked up — setting up your environment, organising
+files and folders, describing what you want, iterating on what exists, reading error messages,
+asking for help — are the same ones used to build anything more ambitious. There's no ceiling
+on where this goes next.
 
 If `references/what-next.md` exists, read it and share it with the user. It covers: what's
 still within easy reach (iteration, design, sharing, custom domains), what gets significantly
