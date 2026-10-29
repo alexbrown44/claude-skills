@@ -425,7 +425,7 @@ Once the app is live, take a moment to mark it properly before moving on:
 >
 > What would you like to do next?
 > 1. **Continue** — add a database so your app can save and retrieve data (scores, history, records, etc.).
-> 2. **Stop for now** — you're done for today and will come back to add a database another time."
+> 2. **Stop here** — your app is live and that's enough. Not every app needs a database."
 
 If they stop or return later, tell them:
 > "Before you close anything — note this down so you know exactly how to pick up where you left off:
