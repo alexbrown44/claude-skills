@@ -13,10 +13,12 @@ description: >
 
 ## Welcome
 
-You've installed this skill — which means you've already done something worth noting.
-You found a file on GitHub, downloaded it, and set it up in Claude Code. That's exactly
-the same process you'll use in Checkpoint 2 to publish your own app. GitHub is already
-familiar territory.
+You've installed this skill — and that's genuinely the hardest part done.
+Getting your environment set up, finding files on GitHub, putting things in the right folders —
+that's unfamiliar territory for most people, and you've already navigated it. Everything from
+here is more straightforward. And the process you just followed — downloading from GitHub and
+putting files in the right place — is exactly what you'll do in Checkpoint 2 to publish your
+own app. GitHub is already familiar territory.
 
 **One thing to know before we start:** Claude Code is not just a code generator — it's more like
 having a very generous, very patient software engineer sitting next to you. It will build things
