@@ -280,7 +280,7 @@ Present both options together so they can see what's involved either way:
 > On Windows the path looks like `C:\Users\yourname\my-app`; on Mac it looks like `/Users/yourname/my-app`.
 > This navigates to your project folder — like opening a drawer before you can use what's inside.
 >
-> Then run these two commands, one at a time:
+> Then run these two commands, one at a time — press Enter after each one:
 >
 > `npm install`
 > This reads your **package.json** file and downloads all the libraries your app needs. npm stands
