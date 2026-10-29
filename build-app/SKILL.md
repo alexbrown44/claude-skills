@@ -139,6 +139,12 @@ each part before proceeding:
 > "Here's the prompt we'll use. I've included [X] because [reason], and I've left out [Y] because
 > [reason]. Does this capture what you want?"
 
+**Important — no database in this prompt.** The first build is deliberately self-contained. If the
+user mentions saving data, user accounts, or a leaderboard, note that those are great ideas for
+Checkpoint 3 — but keeping them out of the first build means a faster, cleaner start. Tell them:
+> "We'll leave the database out for now — that's Checkpoint 3. The first version will be a
+> fully working app; we add the ability to save data once it's live."
+
 **Why this step matters:** The prompt is your blueprint. Claude Code generates all the files from it —
 a vague prompt produces a vague app. One clear paragraph saves hours of back-and-forth.
 
