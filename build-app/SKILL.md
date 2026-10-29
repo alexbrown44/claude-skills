@@ -31,6 +31,10 @@ genuine understanding of how it was built.
 
 Ask freely. That's what Claude Code is for.
 
+**How long does this take?** About one hour to get a working app live on the internet.
+Add another hour if you want a database. You don't need to do it all in one sitting —
+each checkpoint is a natural stopping point.
+
 ---
 
 ## What this skill does
