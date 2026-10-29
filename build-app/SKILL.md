@@ -211,7 +211,12 @@ them by name (e.g. `process.env.ANTHROPIC_API_KEY`) without ever containing the 
 For the local build, Claude Code will create a `.env` file in your project folder to hold these
 values. This file stays on your computer only — it is never pushed to GitHub.
 
-Claude Code will handle setting this up. When it asks for an API key, that's where to paste it.
+Claude Code will handle setting this up. First, check whether the user already has the API key
+they need — if they've built an app before they may already have one. Ask:
+> "Do you already have an API key for this service, or do you need to create one?"
+
+If they already have one, skip straight to adding it to the `.env` file. If not, walk them to
+the right place to create it (e.g. console.anthropic.com for the Anthropic API) and then add it.
 
 **Important — the .env file must never be uploaded to GitHub:**
 Claude Code will also create a file called `.gitignore` in your project folder. This is a list
