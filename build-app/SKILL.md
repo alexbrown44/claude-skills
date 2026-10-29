@@ -554,8 +554,14 @@ the change looks right on your own computer. This is useful for catching obvious
 before they go live, but it's not required — you can push straight to GitHub and test on
 the live app if you prefer.
 
-Each cycle typically takes minutes. Here are three real examples from the Chess Trainer to show
-what iteration looks like in practice:
+Each cycle typically takes minutes. The Chess Trainer grew entirely this way — fixing a bug where
+castling was always rejected, redesigning the coaching report into a traffic-light card, adding a
+chess trivia easter egg, and building a leaderboard once the database was connected. None of it was
+planned upfront; each change came from using the app and noticing what was missing. That's what
+iteration looks like in practice.
+
+If `references/iteration-examples.md` exists, read it now and share a brief summary of the five
+examples with the user, so they can see the full range of what iteration can look like.
 
 **What makes a good change description:**
 The examples below all worked because they described the *symptom or outcome*, not the technical
@@ -568,10 +574,7 @@ you want. A few principles that help:
 
 You never need to suggest a solution. That's Claude Code's job.
 
-If `references/iteration-examples.md` exists, read it and share the relevant examples with
-the user as they come up naturally. It contains five real Chess Trainer examples covering:
-fixing a bug, redesigning a feature, adding something new, a capability unlocking new features,
-and progressive refinement. If the file is not present, continue without it.
+If `references/iteration-examples.md` is not present, continue without it.
 
 ---
 
