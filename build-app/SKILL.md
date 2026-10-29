@@ -587,7 +587,7 @@ anything more ambitious. There's no ceiling on where this goes next.
 If `references/what-next.md` exists, read it and share it with the user. It covers: what's
 still within easy reach (iteration, design, sharing, custom domains), what gets significantly
 more complex (auth, payments, scaling), an honest closing note, and a full costs summary table.
-If the file is not present, continue without it.
+If the file is not present, share a brief summary of those topics from the description above.
 
 ---
 
