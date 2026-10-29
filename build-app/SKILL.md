@@ -467,7 +467,12 @@ ideal for learning and testing.
    > the rest. For the Chess Trainer, Claude Code created a table storing the player name,
    > score, opening played, move count, and full coaching report.
    >
-   > Once Claude Code confirms the table is created, come back here."
+   > Once Claude Code confirms the table is created, come back here.
+   >
+   > If Claude Code can't create it directly, you can do it yourself: in your Supabase
+   > project go to **Table Editor** in the left sidebar → **New table**. Give it a name,
+   > then add columns one by one — each needs a name and a type (`text` for words, `int8`
+   > for whole numbers, `float8` for decimals, `timestamp` for dates/times)."
 4. Copy the **connection string** (called DATABASE_URL) from Supabase's settings.
 
 **If your database stops working unexpectedly** — Supabase's free tier pauses projects after
