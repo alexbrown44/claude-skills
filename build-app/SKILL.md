@@ -119,42 +119,9 @@ Don't assume any setup has been done. Once oriented, jump to exactly the right p
 
 ## Checkpoint 1 — Working App on Your Computer
 
-### Stage 1.0 — Shape Your Idea Before Building It
+### Stage 1.0 — Shape Your Idea and Craft the Prompt
 
-You're already in Claude Code — which is where we'll build. But before writing a single line of
-code, it helps to have a clear idea of what you want. The best place to develop that is in
-**Claude.ai** (claude.ai) — a separate chat interface you can open alongside this window.
-
-Explain the difference:
-> "Claude.ai is the conversational version of Claude — like having a chat. Claude Code (where
-> you are now) is where we build things. The best workflow is: use Claude.ai first to think
-> through your app idea and shape it into a clear brief, then bring that brief back here to build it."
-
-Ask whether they've already done this. If not, suggest they open claude.ai now (it's fine to
-have both open at the same time) and describe their idea in plain language. A good starting point:
-> "I want to build a web app. Here's what I have in mind: [their idea]. Help me think through
-> what it should do, who will use it, and what it definitely shouldn't include."
-
-They can also describe their idea directly here in Claude Code — it's less ideal for open-ended
-exploration, but it works. If they want to do that, help them develop it into a clear brief before
-moving on.
-
-**Why this step matters:** Claude.ai is better for exploration and iteration — you can go back
-and forth, try different angles, and refine your thinking without generating any code. Claude Code
-is better for execution once the idea is clear.
-
-**Expect iteration:** The first version of an idea is rarely the final one. When building the
-Chess Trainer, the first prompt produced an app that included a live online chess board — not
-what was wanted. One conversation in Claude.ai clarified the idea, and the revised prompt
-produced a much better result — good enough to start building from. The app was then refined
-further through iteration during the build itself. That's normal: the prompt gets you started
-in the right direction, and you adjust as you go.
-
-Once the user has a clear brief from Claude.ai, continue to Stage 1.1.
-
-### Stage 1.1 — Craft the Prompt for Claude Code
-
-With their idea refined, help them turn it into a precise prompt for Claude Code. Ask:
+Before writing any code, you need a clear picture of what you're building. Start by asking:
 > "Tell me about the app you want to build. What does it do? Who uses it? What should it definitely
 > NOT do or include?"
 
