@@ -466,7 +466,12 @@ ideal for learning and testing.
    > 'What should my database table look like?' — it can look at your app and suggest
    > exactly what data to save. For the Chess Trainer, Claude Code proposed saving the
    > player name, score, opening played, move count, and the full coaching report.
-   > Once you have the structure, create the table in Supabase, then come back here."
+   >
+   > To create the table in Supabase: in your project, go to **Table Editor** in the left
+   > sidebar → **New table**. Give it a name, then add columns one by one — each column
+   > needs a name and a type (use `text` for words, `int8` for whole numbers, `float8` for
+   > decimals, `timestamp` for dates/times). Once you have the structure, create the table,
+   > then come back here."
 4. Copy the **connection string** (called DATABASE_URL) from Supabase's settings.
 
 **If your database stops working unexpectedly** — Supabase's free tier pauses projects after
