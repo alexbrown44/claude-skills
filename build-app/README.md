@@ -65,7 +65,8 @@ Unzip the file — you'll find a folder called `build-app` inside.
 
 **Step 2 — Create the global skills folder**
 
-Installing the skill globally means it's available in every project — you only do this once.
+This folder doesn't exist yet — you're creating it now. You only do this once, and once it's
+done the skill is available in every project forever.
 
 On **Windows**, create this folder path inside your user folder (`C:\Users\YourName\`):
 `.claude` → `skills`
