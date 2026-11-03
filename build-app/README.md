@@ -63,30 +63,29 @@ get unstuck if anything isn't clear.
 
 Unzip the file — you'll find a folder called `build-app` inside.
 
-**Step 2 — Create your project folder**
+**Step 2 — Create the global skills folder**
 
-Create an empty folder on your computer where you'll build your app.
-(Example: `Documents\my-app`)
+Installing the skill globally means it's available in every project — you only do this once.
 
-**Step 3 — Create the skill folder path inside it**
-
-Inside your project folder, create this exact path of subfolders:
+On **Windows**, create this folder path inside your user folder (`C:\Users\YourName\`):
 `.claude` → `skills`
 
-To do this on Windows:
-- Right-click inside your project folder → **New → Folder** → name it `.claude`
-- Open `.claude` → create a folder called `skills`
+- Open File Explorer and go to `C:\Users\YourName\`
+- Create a folder called `.claude`
+- Open `.claude` and create a folder called `skills`
 
 > **Note:** Folders starting with a dot (like `.claude`) are hidden by default on Windows.
 > To see them in File Explorer, click **View** and tick **Hidden items**.
 
-**Step 4 — Copy the skill folder**
+On **Mac**, the path is `/Users/YourName/.claude/skills/` — create it the same way in Finder,
+or ask Claude to help you.
 
-Copy the entire `build-app` folder (not just the `SKILL.md` file inside it) into the
-`skills` folder you just created. The result should look like this:
+**Step 3 — Copy the skill folder**
+
+Copy the entire `build-app` folder into the `skills` folder you just created:
 
 ```
-your-project/
+C:\Users\YourName\        (or /Users/YourName/ on Mac)
 └── .claude/
     └── skills/
         └── build-app/
@@ -96,9 +95,9 @@ your-project/
                 └── what-next.md
 ```
 
-**Step 5 — Open Claude Code**
+**Step 4 — Open Claude Code**
 
-Open Claude Code and open your project folder. Type `/build-app` to begin.
+Create an empty folder for your new app, open it in Claude Code, and type `/build-app` to begin.
 
 ---
 

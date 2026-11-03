@@ -14,16 +14,17 @@ See each skill's folder for full instructions and requirements.
 
 **[Download all skills](https://github.com/alexbrown44/claude-skills/archive/refs/heads/main.zip)**
 
-Unzip the file, then copy the skill folder you want (e.g. `build-app`) into your project:
+Unzip the file, then copy the skill folder you want (e.g. `build-app`) into your global Claude
+skills folder — install it once and it's available in every project:
 
 ```
-your-project/
+C:\Users\YourName\        (or /Users/YourName/ on Mac)
 └── .claude/
     └── skills/
         └── build-app/    ← paste the folder here
 ```
 
-Open Claude Code in your project folder and type `/build-app` (or the name of whichever skill you installed) to begin.
+Open Claude Code in any project folder and type `/build-app` (or the name of whichever skill you installed) to begin.
 
 **Not sure how to do this?** Open [claude.ai](https://claude.ai) and paste:
 > "I want to install a Claude Code skill. I've downloaded the ZIP from GitHub and unzipped it.
