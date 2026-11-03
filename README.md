@@ -15,7 +15,8 @@ See each skill's folder for full instructions and requirements.
 **[Download all skills](https://github.com/alexbrown44/claude-skills/archive/refs/heads/main.zip)**
 
 Unzip the file, then copy the skill folder you want (e.g. `build-app`) into your global Claude
-skills folder — install it once and it's available in every project:
+skills folder. This folder probably doesn't exist yet — you'll need to create it first (once only,
+then it's available in every project forever):
 
 ```
 C:\Users\YourName\        (or /Users/YourName/ on Mac)
